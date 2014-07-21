@@ -116,7 +116,7 @@ int main(int argc, char *argv[]){
 		data = dht11_read(strtol(argv[1],NULL,10));	
 	}
 
-	fprintf(stderr,"H:%u - TEMP:%u\n",data>>24, (data&0xff00)>>8);
+	fprintf(stderr,"H:%u%\nTemp:%uC°\n",data>>24, (data&0xff00)>>8);
 	
 	return 0;
 }
